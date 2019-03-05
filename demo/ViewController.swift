@@ -11,16 +11,29 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    @IBOutlet weak var lblmsg: UILabel!
-    @IBOutlet weak var lblmsg1: UILabel!
+    @IBOutlet weak var lblresult: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        lblmsg.text="hello"
-        lblmsg1.text="world"
+     
     }
 
-
+    @IBAction func btnplus(_ sender: Any) {
+    }
+    
+    @IBAction func btnminus(_ sender: Any) {
+    }
+    
+    @IBAction func btnmul(_ sender: Any) {
+    }
+    
+    
+    @IBAction func btndiv(_ sender: Any) {
+    }
+    
+    @IBAction func btnsubmit(_ sender: Any) {
+    }
 }
 
