@@ -11,8 +11,13 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    @IBOutlet weak var lblresult: UILabel!
     
+    @IBOutlet weak var no1: UITextField!
+    
+    @IBOutlet weak var no2: UITextField!
+    @IBOutlet weak var lblresult: UILabel!
+     @IBOutlet weak var result: UILabel!
+    var c:Double=0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,20 +25,35 @@ class ViewController: UIViewController {
      
     }
 
-    @IBAction func btnplus(_ sender: Any) {
-    }
-    
-    @IBAction func btnminus(_ sender: Any) {
-    }
-    
-    @IBAction func btnmul(_ sender: Any) {
-    }
     
     
-    @IBAction func btndiv(_ sender: Any) {
+    
+    @IBAction func plus(_ sender: UIButton) {
+       var a = Double(no1.text!)!
+        var b = Double(no2.text!)!
+         c = a + b
     }
     
-    @IBAction func btnsubmit(_ sender: Any) {
+    
+    @IBAction func minus(_ sender: UIButton) {
     }
+    
+    
+    @IBAction func mul(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func div(_ sender: UIButton) {
+    }
+    
+    @IBAction func btnsubmit(_ sender: UIButton) {
+        result.text=String(c)
+    }
+    
+    
+   
+    
+    
+    
 }
 
